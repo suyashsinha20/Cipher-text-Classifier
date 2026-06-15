@@ -30,9 +30,9 @@ The LSTM model was used to evaluate binary classifiers distinguishing between di
 
 | Classification Task | Accuracy | Observation |
 | :--- | :--- | :--- |
-| **CFB vs. CTR** | `81.31%` | High distinguishability; CTR exhibits readily identifiable patterns. |
-| **OFB vs. CTR** | `77.93%` | Good distinguishability against CTR mode. |
-| **CFB vs. OFB** | `48.50%` | Close to random guessing. CFB and OFB produce highly similar ciphertext characteristics making them difficult to separate using this feature extraction approach. |
+| **CFB vs. CTR** | `78.93%` | High distinguishability; CTR exhibits readily identifiable patterns. |
+| **OFB vs. CTR** | `79.52%` | Good distinguishability against CTR mode. |
+| **CFB vs. OFB** | `48.12%` | Close to random guessing. CFB and OFB produce highly similar ciphertext characteristics making them difficult to separate using this feature extraction approach. |
 
 ## 💡 Conclusion
 The study successfully demonstrates that machine learning techniques like LSTMs can capture cryptanalytic differences between certain AES modes, particularly when distinguishing against CTR mode. At the same time, the results highlight the challenge of separating modes that produce highly similar ciphertext patterns (such as CFB and OFB), establishing a baseline for future improvements in feature engineering, dataset generation, and model architecture.
